@@ -27,10 +27,20 @@
 // for each loop****
 // *****************
 
+// var itemList =["red","green","yellow"]
+// itemList.forEach(function(item){
+//     console.log(item)
+// })
+
 var itemList =["red","green","yellow"]
+var ul = document.createElement("ul")
 itemList.forEach(function(item){
-    console.log(item)
+
+    var li =document.createElement("li")
+   li.innerText =item
+    ul.appendChild(li)
 })
+document.body.appendChild(ul)
 
     </script>
 </body>
